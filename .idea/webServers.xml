@@ -5,7 +5,14 @@
       <webServer id="94799daa-c7be-4446-a61b-587fd8397f42" name="m" url="http://185.66.71.12">
         <fileTransfer host="185.66.71.12" port="21">
           <advancedOptions>
-            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+      <webServer id="4de6eb21-feaf-43be-8265-b39d1364aa70" name="test" url="http://185.66.71.12">
+        <fileTransfer rootFolder="/home/moonersi/public_html" accessType="SFTP" host="93.125.99.133" port="22" sshConfigId="e3e23954-f056-43c7-b4a5-331c238a5d45" sshConfig="moonersi@93.125.99.133:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
           </advancedOptions>
         </fileTransfer>
       </webServer>
